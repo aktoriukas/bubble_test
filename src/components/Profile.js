@@ -18,7 +18,7 @@ export default function Profile({user, bookings, token}) {
     return (
         <div className='row'>
 
-            <div className='col-12 col-lg-5'>
+            <div className='col-12 col-lg-6'>
 
                 <h2 className='section-title'>Profile</h2>
 
@@ -26,14 +26,14 @@ export default function Profile({user, bookings, token}) {
 
             </div>
 
-            <div className='col-12 col-lg-5'>
+            <div className='col-12 col-lg-6'>
 
                 <h2 className='section-title'>Your bookings:</h2>
 
                 {bookings ? 
                     bookings.confirmedBookings.map(booking => (
 
-                        <Booking key={booking.id} booking={booking} />
+                        <Booking token={token} key={booking.id} booking={booking} />
                     ))
                 :
                 'no bookings'

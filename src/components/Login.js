@@ -50,7 +50,9 @@ export default function Login({setToken}) {
                     name='password' 
                     value={password}/>
 
-                <input type='submit'/>
+                <input 
+                    className='custom-btn'
+                    type='submit'/>
 
                 <p className='error-msg'>
                     {

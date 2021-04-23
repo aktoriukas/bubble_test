@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import Login from './components/Login'
 import {api_getUser,api_getBookings} from './api_calls'
 import Profile from './components/Profile'
+import Background from './Background'
 
 import './css/index.css'
 export default function App() {
@@ -39,6 +40,7 @@ export default function App() {
           setToken={setToken} />
         }
       </div>
+      <Background />
     </div>
   );
 }
