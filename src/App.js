@@ -7,7 +7,7 @@ import Background from './Background'
 import './css/index.css'
 export default function App() {
 
-  const [token, setToken] = useState('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjVmNDRkM2ZmMzM2ZjE4MDc2NGYxMjY1ZiIsInR5cGUiOiJtb2JpbGUiLCJpYXQiOjE1OTk2NDg4ODksImV4cCI6MTY0Mzg4NTY4OX0.W4P1OsLIrqzA8-XILGBBrRl1iQYLy3NZSZBZus_zfbQ')
+  const [token, setToken] = useState('')
   const [user, setUser] = useState(false)
   const [bookings, setbookings] = useState(false)
 

@@ -3,8 +3,8 @@ import {api_login} from '../api_calls'
 
 export default function Login({setToken}) {
 
-    const [email, setEmail] = useState('janet.stevans@siliconrhino.io')
-    const [password, setPassword] = useState('12345')
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
     const [error, setError] = useState(false)
 
     const handleFormSubmit = (e) => {
